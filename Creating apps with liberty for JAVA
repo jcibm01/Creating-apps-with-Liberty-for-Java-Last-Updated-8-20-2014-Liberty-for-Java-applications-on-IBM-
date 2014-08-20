@@ -1,0 +1,47 @@
+DISCLAIMER----This routine and info wasn´t created for me!. It´s available in https://www.ng.bluemix.net/docs/#starters/liberty/index.html#liberty
+
+
+Creating apps with Liberty for Java
+Last Updated: 8/20/2014
+
+Liberty for Java™ applications on IBM® Bluemix™ are powered by the IBM WebSphere® Liberty Buildpack. The Liberty profile is a highly composable, fast-to-start, dynamic application server runtime environment. It is part of IBM WebSphere Application Server v8.5.5. This buildpack provides a container for web and OSGi applications with Java EE Web Profile capabilities, supports popular frameworks like Spring, and includes IBM JRE. WebSphere Liberty enables rapid application development that is well suited to the cloud.
+About the Liberty for Java Starter Application
+
+The Liberty for Java Starter Application is a boilerplate for Bluemix Liberty for Java application development. The WebSphere Application Server Liberty Profile is the container for this type of application.
+
+It demonstrates how to develop and deploy a Liberty for Java application for Bluemix.
+Usage
+
+Bluemix provides a Liberty for Java Starter Application as a template so that you can add your code and push the changes back to the Bluemix environment.
+Use the following steps to start using the Liberty for Java Starter Application from the Bluemix user interface:
+
+    Create a Liberty for Java Starter Application and download the starter code.
+        Click Create App to deploy a Liberty for Java Starter Application.
+        Provide the App name and Host in the prompt.
+        After the application deploys, click the settings icon and choose View Quick Start.
+        Download the starter application package.
+    Ensure that the cf command-line tool is installed.
+
+    This tool is a command-line interface for application deployment and management on Bluemix.
+    Log in to the Bluemix environment.
+
+    $ cf login -a https://api.ng.bluemix.net -o <your org name> -s <your space name> API endpoint: https://api.ng.bluemix.net Username> <your user ID> Password>******* Authenticating... OK Targeted org <your org name> Targeted space dev API endpoint: https://api.ng.bluemix.net (API version: 2.0.0) User: <your user ID> Org: <your org name> Space: <your space name>
+
+    Modify the application and deploy again.
+
+    In the starter application package, a README file describes each file. Make changes to the code, deploy the application again, then see the effect.
+
+    To deploy your modified application to Bluemix, use the cf command. For example:
+
+    $ cf push <yourappname> -p pathtoApp -m 512M
+
+    Access your application.
+
+    After your application is deployed, open the URL in a browser to see it running.
+
+    http://<yourappname>.mybluemix.net
+
+    Start using services.
+
+    There are many services available in Bluemix to make your application more powerful. You can add any available services to your application. For more information, see each service's documentation.
+
